@@ -1,0 +1,22 @@
+(* Type definition *)
+type unaryIntFunction: (integer: x) -> integer
+
+(* This is a function definition.
+   It uses the above type definition.
+*)
+function square : unaryIntFunction {
+    square := x * x;
+}
++1.2e-3
+1.1
+1.2
++1
+before (* this is a comment
+   over multiple
+   lines *) after
+   {      
+  [ integer: input := 7, expected := 49, actual ; Boolean: result ]
+  actual := square(input);
+  result := expected = actual;
+}
+

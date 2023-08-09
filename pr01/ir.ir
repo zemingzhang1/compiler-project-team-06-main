@@ -1,0 +1,5 @@
+IR Code: 
+main
+intx=2
+intx2=1
+intx3=intx2+intx

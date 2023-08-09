@@ -1,0 +1,70 @@
+alpha parser, version 2022.01 - Tokens for file sample.alpha
+700 (* Type definition *) 1 1
+410 type 2 1
+101 unaryIntFunction 2 6
+508 : 2 22
+501 ( 2 24
+201 integer 2 25
+508 : 2 32
+101 x 2 34
+502 ) 2 35
+510 -> 2 37
+201 integer 2 40
+700 (* This is a function definition.
+   It uses the above type definition.
+*) 4 1
+411 function 7 1
+101 square 7 10
+508 : 7 17
+101 unaryIntFunction 7 19
+505 { 7 36
+101 square 8 5
+608 := 8 12
+101 x 8 15
+603 * 8 17
+101 x 8 19
+507 ; 8 20
+506 } 9 1
+601 + 10 1
+302 1.2e-3 10 2
+302 1.1 11 1
+302 1.2 12 1
+601 + 13 1
+301 1 13 2
+101 before 14 1
+700 (* this is a comment
+   over multiple
+   lines *) 14 8
+101 after 16 60
+505 { 17 4
+503 [ 18 3
+201 integer 18 5
+508 : 18 12
+101 input 18 14
+608 := 18 20
+301 7 18 23
+509 , 18 24
+101 expected 18 26
+608 := 18 35
+301 49 18 38
+509 , 18 40
+101 actual 18 42
+507 ; 18 49
+203 Boolean 18 51
+508 : 18 58
+101 result 18 60
+504 ] 18 67
+101 actual 19 3
+608 := 19 10
+101 square 19 13
+501 ( 19 19
+101 input 19 20
+502 ) 19 25
+507 ; 19 26
+101 result 20 3
+608 := 20 10
+101 expected 20 13
+607 = 20 22
+101 actual 20 24
+507 ; 20 30
+506 } 21 1
